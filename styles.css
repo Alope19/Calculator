@@ -4,58 +4,92 @@ body{
     justify-content: center;
     padding:150px;
     background-color: rgb(198, 219, 238);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .calculator{
-    border: 2px solid black;
+    border: 2px solid gray;
     border-radius: 2%;
-    width:500px;
+    width: 500px;
     height: 700px;
     display:flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 20px;
     background-color: rgb(189, 189, 189);
+    box-shadow: -5px 5px gray;
 }
-.display{
-    border: 2px solid black;
+.displaycontainer{
+    border: 2px solid rgb(95, 95, 95);
     width:450px;
     height: 100px;
     border-radius: 20px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 4px gray;
+    background-color: rgb(199, 214, 255);
+    box-shadow: 0px 2px gray;
     display: flex;
     align-items: center;
     justify-content: end;
-    font-size: x-large;
-    font-weight: 700;
-
-    
+}
+.display{
+    font-size: 50px;
+    font-weight: 900;
+    padding: 5px;
 }
 .buttons{
     width: 450px;
     height: 500px;
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
+    border: 1px solid gray;
+    border-radius: 20px;
+    box-shadow: 0px -5px gray;
+    background-color: rgb(180, 180, 180);
 }
-.button-container{
-    flex:1;
-    width: 450px;
+.clear,.erase{
+    height: 70px;
+    width: 175px;
+
+}
+.button-container, .clear-container{
+    flex: 1;
     display: flex;
     align-items: center;
-    justify-content:space-between;
-    
+    justify-content: space-evenly
+}
+.button , .clear,.erase{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid gray;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 5px gray;
+    font-size: xx-large;
+    font-weight: 400;
+
 }
 .button{
-    padding: 35px;
-    border-radius: 20px;
-    background-color: white;
-    box-shadow: 0px 4px gray;
-    font-weight: 700;
-    font-size: xx-large;
-    border: 1px solid;
-    width: 20px;
-    text-align: center;
+    width: 70px;
+    height: 70px;
+    transition: 50ms;
+}
+.button:hover{
+    background-color: rgb(204, 204, 204);
+    transition: 50ms;
+}
+.clear{
+    background-color: rgb(199, 214, 255);
+    transition: 50ms;
+}
+.clear:hover{
+    background-color: rgb(162, 187, 255);
+    transition: 50ms;
+}
+.erase{
+    background-color: rgb(255, 98, 98);
+    transition: 50ms;
+}
+.erase:hover{
+    background-color: rgb(255, 122, 122);
+    transition: 50ms;
 }
